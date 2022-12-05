@@ -54,6 +54,7 @@ function calculateMonthlyPayment(values) {
   monthlyPayment = (p * i) / (1 - ((1 + i) ** -n))
   monthlyPayment = monthlyPayment.toFixed(2);
   updateMonthly(monthlyPayment);
+  return monthlyPayment;
 }
 
 // Given a string representing the monthly payment value,
